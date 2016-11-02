@@ -23,15 +23,16 @@
 			<h1 class="text-center">Giffaw</h1>
 			<div class="row">
 				<div class="col-sm-4">
-					<form class="form-inline">
+					<form class="form-inline" name="limit" value="50">
 						<label>Search Gifs</label>
-						<input type="text" class="form-control gif-input" name="q" value="cats" placeholder="search gifs">
+						<input type="text" class="form-control gif-input" name="q" value="" placeholder="search gifs" required="">
 						<input type="hidden" name="api_key" value="dc6zaTOxFJmzC">
 						<input type="submit" value="Go!" class="btn btn-primary">
 					</form>
 				</div>
 				<div class="col-sm-8">
 					<div class="gif-gallery"></div>
+					<input id="loadMore" type="button" value="Load more" class="btn btn-primary">
 				</div>
 			</div>
 		</div>
